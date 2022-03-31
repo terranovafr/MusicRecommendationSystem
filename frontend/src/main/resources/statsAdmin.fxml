@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unipi.largescale.gui.FXMLStatsAdminDocumentController">
+   <children>
+      <Label layoutX="198.0" layoutY="26.0" text="Stats">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <BarChart fx:id="barChart" layoutX="76.0" layoutY="156.0" legendVisible="false" prefHeight="230.0" prefWidth="253.0" style="-fx-bar-fill: #99CCFF;" styleClass=".default-color0.chart-bar { -fx-bar-fill: -fx-not-achieved; }" stylesheets="@style.css">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yAxis" minorTickCount="3" side="LEFT" upperBound="5.0" />
+         </yAxis>
+      </BarChart>
+      <SplitMenuButton fx:id="menu" layoutX="148.0" layoutY="59.0" mnemonicParsing="false" text="Choose the stat">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#showClusterHighestVariance" text="Cluster With Highest Variance" />
+          <MenuItem mnemonicParsing="false" onAction="#showMostDanceableCluster" text="Most Danceable Cluster" />
+            <MenuItem mnemonicParsing="false" onAction="#showTopKStrongestCountries" text="Top 3 Strongest Countries" />
+        </items>
+      </SplitMenuButton>
+      <Label fx:id="result" layoutY="95.0" prefHeight="64.0" prefWidth="423.0" style="-fx-alignment: CENTER;" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

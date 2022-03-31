@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigation?>
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="409.0" prefWidth="432.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unipi.largescale.gui.FXMLRecommendedUsersDocumentController">
+   <children>
+      <BottomNavigation layoutX="86.0" layoutY="53.0" prefHeight="34.0" prefWidth="261.0">
+          <actionItems>
+              <BottomNavigationButton onAction="#showRecommendedUsers" prefHeight="56.0" prefWidth="86.0" style="-fx-background-color: #CCE5FF;" text="Recommended">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons-png.flaticon.com/512/3820/3820147.png" />
+                     </image></ImageView>
+               </graphic>
+               <effect>
+                  <InnerShadow height="4.0" radius="1.75" width="5.0" />
+               </effect>
+              </BottomNavigationButton>
+              <BottomNavigationButton onAction="#showNearbyUsers" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #CCE5FF;" text="Nearby">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="https://cdn-icons-png.flaticon.com/512/3313/3313834.png" />
+                     </image></ImageView>
+               </graphic>
+               <effect>
+                  <InnerShadow height="4.0" radius="1.75" width="5.0" />
+               </effect></BottomNavigationButton>
+          </actionItems>
+      </BottomNavigation>
+      <TableView fx:id="tableView" layoutX="31.0" layoutY="104.0" prefHeight="269.0" prefWidth="370.0" style="-fx-alignment: CENTER; -fx-background-color: #99CCFF;">
+        <columns>
+          <TableColumn fx:id="imageColumn" editable="false" maxWidth="79.0" minWidth="79.0" prefWidth="79.0" sortable="false" style="-fx-background-color: #99CCFF; -fx-alignment: CENTER;" />
+          <TableColumn fx:id="firstNameColumn" editable="false" maxWidth="80.0" minWidth="80.0" sortable="false" style="-fx-background-color: #99CCFF; -fx-alignment: CENTER;" />
+            <TableColumn fx:id="lastNameColumn" editable="false" maxWidth="80.0" minWidth="80.0" sortable="false" style="-fx-background-color: #99CCFF; -fx-alignment: CENTER; -fx-color: white;" />
+            <TableColumn fx:id="sendRequestColumn" editable="false" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" sortable="false" style="-fx-background-color: #99CCFF; -fx-alignment: CENTER;" />
+        </columns>
+      </TableView>
+      <Button layoutX="142.0" layoutY="14.0" mnemonicParsing="false" onAction="#checkForUpdates" style="-fx-background-color: #CCE5FF;" text="Check for updates">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="https://cdn-icons-png.flaticon.com/512/126/126502.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

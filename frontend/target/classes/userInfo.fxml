@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unipi.largescale.gui.FXMLUserInfoDocumentController">
+   <children>
+      <Label layoutX="112.0" layoutY="199.0" text="Username" />
+      <Label layoutX="133.0" layoutY="231.0" text="E-mail" />
+      <TextField fx:id="name" layoutX="176.0" layoutY="127.0" />
+      <TextField fx:id="surname" layoutX="176.0" layoutY="161.0" />
+      <TextField fx:id="username" layoutX="175.0" layoutY="195.0" />
+      <TextField fx:id="email" layoutX="175.0" layoutY="226.0" />
+      <Label layoutX="87.0" layoutY="263.0" text="Phone number" />
+      <TextField fx:id="phoneNumber" layoutX="176.0" layoutY="258.0" />
+      <Label layoutX="115.0" layoutY="166.0" text="Surname" />
+      <Label layoutX="134.0" layoutY="132.0" text="Name" />
+      <Label layoutX="120.0" layoutY="295.0" text="Gender" />
+      <Label layoutX="99.0" layoutY="325.0" text="Date of Birth" />
+      <ImageView fx:id="image" fitHeight="97.0" fitWidth="92.0" layoutX="166.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="129.0" layoutY="358.0" text="Country" />
+      <TextField fx:id="genderInput" layoutX="176.0" layoutY="291.0" />
+      <TextField fx:id="dateOfBirthInput" layoutX="177.0" layoutY="321.0" />
+      <TextField fx:id="countryInput" layoutX="178.0" layoutY="354.0" />
+   </children>
+</AnchorPane>

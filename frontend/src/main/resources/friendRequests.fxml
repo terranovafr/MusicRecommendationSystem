@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.unipi.largescale.gui.FXMLFriendRequestsDocumentController">
+   <children>
+      <Label layoutX="154.0" layoutY="26.0" text="Friends Requests">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <TableView fx:id="tableView" layoutX="32.0" layoutY="62.0" prefHeight="324.0" prefWidth="360.0" style="-fx-background-color: #99CCFF; -fx-alignment: CENTER;">
+        <columns>
+          <TableColumn fx:id="imageColumn" prefWidth="60.0" style="-fx-background-color: #99CCFF; -fx-alignment: CENTER;" />
+          <TableColumn fx:id="firstNameColumn" prefWidth="60.0" style="-fx-alignment: CENTER; -fx-background-color: #99CCFF;" />
+            <TableColumn fx:id="lastNameColumn" prefWidth="60.0" style="-fx-background-color: #99CCFF; -fx-alignment: CENTER;" />
+            <TableColumn fx:id="acceptRequestColumn" prefWidth="90.0" style="-fx-alignment: CENTER; -fx-background-color: #99CCFF;" />
+            <TableColumn fx:id="declineRequestColumn" prefWidth="90.0" style="-fx-alignment: CENTER; -fx-background-color: #99CCFF;" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

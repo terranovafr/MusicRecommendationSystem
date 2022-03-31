@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.unipi.large.scale.backend.ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.531 s - in com.unipi.large.scale.backend.ApplicationTests

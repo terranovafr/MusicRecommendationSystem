@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "recommended.songs.alpha",
+      "type": "java.lang.String",
+      "description": "Description for alpha parameter in recommended songs."
+    },
+    {
+      "name": "recommended.songs.beta",
+      "type": "java.lang.String",
+      "description": "Description for beta parameter in recommended songs."
+    }
+  ] }

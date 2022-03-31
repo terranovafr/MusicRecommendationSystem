@@ -1,0 +1,24 @@
+{
+  "groups": [
+    {
+      "name": "recommended.songs",
+      "type": "com.unipi.large.scale.backend.configs.RecommendedSongsConfigurationProperties",
+      "sourceType": "com.unipi.large.scale.backend.configs.RecommendedSongsConfigurationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "recommended.songs.alpha",
+      "type": "java.lang.Double",
+      "description": "Description for alpha parameter in recommended songs.",
+      "sourceType": "com.unipi.large.scale.backend.configs.RecommendedSongsConfigurationProperties"
+    },
+    {
+      "name": "recommended.songs.beta",
+      "type": "java.lang.Double",
+      "description": "Description for beta parameter in recommended songs.",
+      "sourceType": "com.unipi.large.scale.backend.configs.RecommendedSongsConfigurationProperties"
+    }
+  ],
+  "hints": []
+}

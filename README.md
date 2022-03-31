@@ -1,0 +1,3 @@
+# MusicRecommendationSystem
+The relationship between musical preferences and an individual's personality remained a long-running topic of contention for researchers due to the variability of results. Starting from an artificial intelligence algorithm used to identify users with similar personalities, we have created a social network for the recommendation of music tracks. In particular, an intelligent algorithm will recommend the most suitable music for the user starting from the favorite songs of users with similar personalities.
+The algorithm created is also capable of evolving, adapting the recommendations according to the consistency expressed by the previous recommendations.

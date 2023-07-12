@@ -10,7 +10,7 @@ This social network relies on a **NoSQL** large-scale and multi-structured datab
 
 ## Architecture
 The software architecture of the application is described in this diagram.<br>
-<p align="center">
+<p align="center"> 
   <img width="726" alt="image" src="https://github.com/terranovaa/MusicRecommendationSystem/assets/61695945/17ab3381-3d59-4e78-9e79-ac9140d8a7cb">
 </p>
 
